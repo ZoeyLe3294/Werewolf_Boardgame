@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingHorizontal="@dimen/padding_distance"
+android:paddingVertical="@dimen/padding_distance"
+android:background="@color/colorPrimary"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools">
+
+<ImageView
+    android:layout_width="215dp"
+    android:layout_height="204dp"
+    android:src="@mipmap/wolf_icon"
+    android:id="@+id/wolf_icon"
+    android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wolf_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/viet_font"
+        android:paddingBottom="30dp"
+        android:text="THIẾT LẬP GAME"
+        android:textColor="@color/whiteTrans"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/numPlayer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/player"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/viet_font"
+        android:gravity="left"
+        android:hint="Số người chơi"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/rolePhase"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/numPlayer"
+        android:layout_alignLeft="@id/numPlayer"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/viet_font"
+        android:hint="Số giây cho mỗi vai trò"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/morningPhase"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/rolePhase"
+        android:layout_alignLeft="@id/rolePhase"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/viet_font"
+        android:hint="Số giây cho mỗi buổi sáng"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/gameMaster"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/morningPhase"
+        android:layout_alignLeft="@id/morningPhase"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:drawableLeft="@drawable/videogame"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/viet_font"
+        android:switchMinWidth="70dp"
+        android:switchPadding="5dp"
+        android:text="Quản Trò  "
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/ongdogia"
+        android:onClick="confirm"
+        android:paddingHorizontal="@dimen/padding_distance"
+        android:text="Duyệt"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

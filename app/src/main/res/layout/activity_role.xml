@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/padding_distance"
+    android:paddingVertical="@dimen/padding_distance"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="204dp"
+        android:src="@mipmap/wolf_icon"
+        android:id="@+id/wolf_icon"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wolf_icon"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ongdogia"
+        android:paddingBottom="30dp"
+        android:text="Nhân Vật"
+        android:textColor="@color/yellow"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/ongdogia"
+        android:textStyle="bold"
+        android:onClick="play"
+        android:paddingHorizontal="@dimen/padding_distance"
+        android:text="Chơi"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="73dp"
+        android:layout_height="83dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignEnd="@+id/listRole"
+        android:layout_alignRight="@+id/listRole"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        app:srcCompat="@drawable/ic_baseline_refresh_24"
+        android:onClick="refresh"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="115dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/button"
+        android:layout_toLeftOf="@+id/button"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        android:onClick="back"/>
+
+    <GridView
+        android:id="@+id/listRole"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/title"
+        android:background="@color/colorPrimary"/>
+
+
+
+
+</RelativeLayout>

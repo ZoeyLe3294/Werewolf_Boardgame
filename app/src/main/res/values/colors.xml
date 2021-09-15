@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FF6D00</color>
+    <color name="darkTrans">#88000000</color>
+    <color name="white">#DFFFFFFF</color>
+    <color name="whiteTrans">#BAFFFFFF</color>
+    <color name="yellow">#FFD600</color>
+    <color name="background_morning">#6498ff</color>
+    <color name="background_center">#5987E2</color>
+    <color name="background_center1">#5079c9</color>
+    <color name="background_night">#22304b</color>
+</resources>

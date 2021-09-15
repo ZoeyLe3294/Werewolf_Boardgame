@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@drawable/background_wolf"
+    android:paddingHorizontal="@dimen/padding_distance"
+    android:paddingVertical="@dimen/padding_distance"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="381dp"-->
+<!--        android:layout_height="611dp"-->
+<!--        app:srcCompat="@drawable/background_wolf" />-->
+
+
+    <TextView
+        android:id="@+id/slogan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ongdogia"
+        android:lineSpacingExtra="5dp"
+        android:onClick="start"
+        android:text="Người\ndày\ncông\nhoa\nngôn\nloạn\nngữ"
+        android:textColor="#E6B10000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/slogan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/ongdogia"
+        android:lineSpacingExtra="5dp"
+        android:onClick="start"
+        android:text="Ta\nlẽ\nnào\nchẳng\nthử\nvờ\ntin\n..."
+        android:textColor="#E6B10000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="471dp"
+        android:layout_height="690dp"
+        android:layout_alignParentTop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/lf30_editor_k9cr8pqz"
+        app:lottie_repeatMode="restart"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-65dp"
+        tools:layout_editor_absoluteY="-66dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
